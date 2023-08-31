@@ -1,0 +1,18 @@
+[
+  {
+    "id": "active",
+    "name": "Activo"
+  },
+  {
+    "id": "reflexive",
+    "name": "Reflexivo"
+  },
+  {
+    "id": "teoric",
+    "name": "Teórico"
+  },
+  {
+    "id": "pragmatic",
+    "name": "Pragmático"
+  }
+]

@@ -15,7 +15,7 @@ const PAGES = {
 };
 
 function App() {
-  const [page, setPage] = useState(PAGES.init);
+  const [page, setPage] = useState(PAGES.results);
   const [questions, setQuestions] = useState(
     questionsData.map((question) => {
       return {

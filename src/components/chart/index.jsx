@@ -10,6 +10,8 @@ import {
 } from "chart.js";
 import { Radar } from "react-chartjs-2";
 
+import "./styles.css";
+
 ChartJS.register(
   RadialLinearScale,
   PointElement,
@@ -51,7 +53,11 @@ function RadarChart({ categories }) {
     ],
   };
 
-  return <Radar data={data} options={options} />;
+  return (
+    <div className="chart-container">
+      <Radar data={data} options={options} width={"400px"} height="400px" />
+    </div>
+  );
 }
 
 RadarChart.propTypes = propTypes;

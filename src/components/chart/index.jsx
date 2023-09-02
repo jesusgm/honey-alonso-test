@@ -20,28 +20,29 @@ ChartJS.register(
 );
 
 const propTypes = {
-  questions: PropTypes.arrayOf(
-    PropTypes.shape({
-      id: PropTypes.number.isRequired,
-      title: PropTypes.string.isRequired,
-      answer: PropTypes.oneOf(["+", "-"]),
-    })
-  ).isRequired,
   categories: PropTypes.arrayOf(
     PropTypes.shape({
       id: PropTypes.number.isRequired,
       title: PropTypes.string.isRequired,
+      value: PropTypes.number.isRequired,
     })
   ).isRequired,
 };
 
-function RadarChart({ questions, categories }) {
+function RadarChart({ categories }) {
+  const options = {
+    scale: {
+      min: 0,
+      stepSize: 1,
+    },
+  };
+
   const data = {
     labels: categories.map((category) => category.name),
     datasets: [
       {
         label: "Respuestas",
-        data: [2, 9, 3, 5, 2, 3],
+        data: categories.map((category) => category.value),
         backgroundColor: "rgba(255, 99, 132, 0.2)",
         borderColor: "rgba(255, 99, 132, 1)",
         borderWidth: 1,
@@ -50,7 +51,7 @@ function RadarChart({ questions, categories }) {
     ],
   };
 
-  return <Radar data={data} />;
+  return <Radar data={data} options={options} />;
 }
 
 RadarChart.propTypes = propTypes;

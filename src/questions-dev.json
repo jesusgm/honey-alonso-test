@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "title": "Tengo fama de decir lo que pienso claramente y sin rodeos.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 2,
+    "title": "Estoy seguro/a de lo que es bueno y lo que es malo, lo que está bien y lo que está mal.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 3,
+    "title": "Muchas veces actúo sin mirar las consecuencias.",
+    "categoryId": "active"
+  },
+  {
+    "id": 4,
+    "title": "Normalmente trato de resolver los problemas metódicamente y paso a paso.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 5,
+    "title": "Creo que los formalismos coartan y limitan la actuación libre de las personas.",
+    "categoryId": "active"
+  },
+  {
+    "id": 6,
+    "title": "Me interesa saber cuáles son los sistemas de valores de los demás y con qué criterios actúan.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 7,
+    "title": "Pienso que el actuar intuitivamente puede ser siempre tan válido como actuar reflexivamente.",
+    "categoryId": "active"
+  },
+  {
+    "id": 8,
+    "title": "Creo que lo más importante es que las cosas funcionen.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 9,
+    "title": "Procuro estar al tanto de lo que ocurre aquí y ahora.",
+    "categoryId": "active"
+  }
+]

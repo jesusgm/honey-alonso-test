@@ -1,26 +1,402 @@
 [
   {
-    "title": "question 1",
-    "category": ""
+    "id": 1,
+    "title": "Tengo fama de decir lo que pienso claramente y sin rodeos.",
+    "categoryId": "pragmatic"
   },
   {
-    "title": "question 2",
-    "category": ""
+    "id": 2,
+    "title": "Estoy seguro/a de lo que es bueno y lo que es malo, lo que está bien y lo que está mal.",
+    "categoryId": "teoric"
   },
   {
-    "title": "question 3",
-    "category": ""
+    "id": 3,
+    "title": "Muchas veces actúo sin mirar las consecuencias.",
+    "categoryId": "active"
   },
   {
-    "title": "question 4",
-    "category": ""
+    "id": 4,
+    "title": "Normalmente trato de resolver los problemas metódicamente y paso a paso.",
+    "categoryId": "teoric"
   },
   {
-    "title": "question 5",
-    "category": ""
+    "id": 5,
+    "title": "Creo que los formalismos coartan y limitan la actuación libre de las personas.",
+    "categoryId": "active"
   },
   {
-    "title": "question 6",
-    "category": ""
+    "id": 6,
+    "title": "Me interesa saber cuáles son los sistemas de valores de los demás y con qué criterios actúan.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 7,
+    "title": "Pienso que el actuar intuitivamente puede ser siempre tan válido como actuar reflexivamente.",
+    "categoryId": "active"
+  },
+  {
+    "id": 8,
+    "title": "Creo que lo más importante es que las cosas funcionen.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 9,
+    "title": "Procuro estar al tanto de lo que ocurre aquí y ahora.",
+    "categoryId": "active"
+  },
+  {
+    "id": 10,
+    "title": "Disfruto cuando tengo tiempo para preparar mi trabajo y realizarlo a conciencia.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 11,
+    "title": "Estoy a gusto siguiendo un orden en las comidas, en el estudio, haciendo ejercicio regularmente.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 12,
+    "title": "Cuando escucho una nueva idea enseguida comienzo a pensar cómo ponerla en práctica.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 13,
+    "title": "Prefiero las ideas originales y novedosas aunque no sean prácticas.",
+    "categoryId": "active"
+  },
+  {
+    "id": 14,
+    "title": "Admito y me ajusto a las normas sólo si me sirven para lograr mis objetivos.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 15,
+    "title": "Normalmente encajo bien con personas reflexivas, y me cuesta sintonizar con personas demasiado espontáneas, imprevisibles.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 16,
+    "title": "Escucho con más frecuencia que hablo.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 17,
+    "title": "Prefiero las cosas estructuradas a las desordenadas.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 18,
+    "title": "Cuando poseo cualquier información, trato de interpretarla bien antes de manifestar alguna conclusión.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 19,
+    "title": "Antes de hacer algo estudio con cuidado sus ventajas e inconvenientes.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 20,
+    "title": "Me entusiasmo con el reto de hacer algo nuevo y diferente.",
+    "categoryId": "active"
+  },
+  {
+    "id": 21,
+    "title": "Casi siempre procuro ser coherente con mis criterios y sistemas de valores. Tengo principios y los sigo.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 22,
+    "title": "Cuando hay una discusión no me gusta ir con rodeos.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 23,
+    "title": "Me disgusta implicarme afectivamente en el ambiente de la escuela. Prefiero mantener relaciones distantes.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 24,
+    "title": "Me gustan más las personas realistas y concretas que las teóricas.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 25,
+    "title": "Me cuesta ser creativo/a, romper estructuras.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 26,
+    "title": "Me siento a gusto con personas espontáneas y divertidas.",
+    "categoryId": "active"
+  },
+  {
+    "id": 27,
+    "title": "La mayoría de las veces expreso abiertamente cómo me siento.",
+    "categoryId": "active"
+  },
+  {
+    "id": 28,
+    "title": "Me gusta analizar y dar vueltas a las cosas.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 29,
+    "title": "Me molesta que la gente no se tome en serio las cosas.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 30,
+    "title": "Me atrae experimentar y practicar las últimas técnicas y novedades.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 31,
+    "title": "Soy cauteloso/a a la hora de sacar conclusiones.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 32,
+    "title": "Prefiero contar con el mayor número de fuentes de información. Cuantos más datos reúna para reflexionar, mejor.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 33,
+    "title": "Tiendo a ser perfeccionista.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 34,
+    "title": "Prefiero oír las opiniones de los demás antes de exponer la mía.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 35,
+    "title": "Me gusta afrontar la vida espontáneamente y no tener que planificar todo previamente.",
+    "categoryId": "active"
+  },
+  {
+    "id": 36,
+    "title": "En las discusiones me gusta observar cómo actúan los demás participantes.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 37,
+    "title": "Me siento incómodo/a con las personas calladas y demasiado analíticas.",
+    "categoryId": "active"
+  },
+  {
+    "id": 38,
+    "title": "Juzgo con frecuencia las ideas de los demás por su valor práctico.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 39,
+    "title": "Me agobio si me obligan a acelerar mucho el trabajo para cumplir un plazo.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 40,
+    "title": "En las reuniones apoyo las ideas prácticas y realistas.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 41,
+    "title": "Es mejor gozar del momento presente que deleitarse pensando en el pasado o en el futuro.",
+    "categoryId": "active"
+  },
+  {
+    "id": 42,
+    "title": "Me molestan las personas que siempre desean apresurar las cosas.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 43,
+    "title": "Aporto ideas nuevas y espontáneas en los grupos de discusión.",
+    "categoryId": "active"
+  },
+  {
+    "id": 44,
+    "title": "Pienso que son más consistentes las decisiones fundamentadas en un minucioso análisis que las basadas en la intuición.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 45,
+    "title": "Detecto frecuentemente la inconsistencia y puntos débiles en las argumentaciones de los demás.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 46,
+    "title": "Creo que es preciso saltarse las normas muchas más veces que cumplirlas.",
+    "categoryId": "active"
+  },
+  {
+    "id": 47,
+    "title": "A menudo caigo en la cuenta de otras formas mejores y más prácticas de hacer las cosas.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 48,
+    "title": "En conjunto hablo más que escucho.",
+    "categoryId": "active"
+  },
+  {
+    "id": 49,
+    "title": "Prefiero distanciarme de los hechos y observarlos desde otras perspectivas.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 50,
+    "title": "Estoy convencido/a que debe imponerse la lógica y el razonamiento.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 51,
+    "title": "Me gusta buscar nuevas experiencias.",
+    "categoryId": "active"
+  },
+  {
+    "id": 52,
+    "title": "Me gusta experimentar y aplicar las cosas.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 53,
+    "title": "Pienso que debemos llegar pronto al grano, al meollo de los temas.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 54,
+    "title": "Siempre trato de conseguir conclusiones e ideas claras.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 55,
+    "title": "Prefiero discutir cuestiones concretas y no perder el tiempo con pláticas superficiales.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 56,
+    "title": "Me impaciento cuando me dan explicaciones irrelevantes e incoherentes.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 57,
+    "title": "Compruebo antes si las cosas funcionan realmente.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 58,
+    "title": "Hago varios borradores antes de la redacción definitiva de un trabajo.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 59,
+    "title": "Soy consciente de que en las discusiones ayudo a mantener a los demás centrados en el tema, evitando divagaciones.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 60,
+    "title": "Observo que, con frecuencia, soy uno/a de los/as más objetivos/as y desapasionados/as en las discusiones.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 61,
+    "title": "Cuando algo va mal, le quito importancia y trato de hacerlo mejor.",
+    "categoryId": "active"
+  },
+  {
+    "id": 62,
+    "title": "Rechazo ideas originales y espontáneas si no las veo prácticas.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 63,
+    "title": "Me gusta sopesar diversas alternativas antes de tomar una decisión.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 64,
+    "title": "Con frecuencia miro hacia delante para prever el futuro.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 65,
+    "title": "En los debates y discusiones prefiero desempeñar un papel secundario antes que ser el/la líder o el/la que más participa.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 66,
+    "title": "Me molestan las personas que no actúan con lógica.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 67,
+    "title": "Me resulta incómodo tener que planificar y prever las cosas.",
+    "categoryId": "active"
+  },
+  {
+    "id": 68,
+    "title": "Creo que el fin justifica los medios en muchos casos.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 69,
+    "title": "Suelo reflexionar sobre los asuntos y problemas.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 70,
+    "title": "El trabajar a conciencia me llena de satisfacción y orgullo.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 71,
+    "title": "Ante los acontecimientos trato de descubrir los principios y teorías en que se basan.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 72,
+    "title": "Con tal de conseguir el objetivo que pretendo soy capaz de herir sentimientos ajenos.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 73,
+    "title": "No me importa hacer todo lo necesario para que sea efectivo mi trabajo.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 74,
+    "title": "Con frecuencia soy una de las personas que más anima las fiestas.",
+    "categoryId": "active"
+  },
+  {
+    "id": 75,
+    "title": "Me aburro enseguida con el trabajo metódico y minucioso.",
+    "categoryId": "active"
+  },
+  {
+    "id": 76,
+    "title": "La gente con frecuencia cree que soy poco sensible a sus sentimientos.",
+    "categoryId": "pragmatic"
+  },
+  {
+    "id": 77,
+    "title": "Si trabajo en grupo procuro que se siga un método y un orden.",
+    "categoryId": "active"
+  },
+  {
+    "id": 78,
+    "title": "Con frecuencia me interesa averiguar lo que piensa la gente.",
+    "categoryId": "teoric"
+  },
+  {
+    "id": 79,
+    "title": "Esquivo los temas subjetivos, ambiguos y poco claros.",
+    "categoryId": "reflexive"
+  },
+  {
+    "id": 80,
+    "title": "Esquivo los temas subjetivos, ambiguos y poco claros.",
+    "categoryId": "teoric"
   }
 ]

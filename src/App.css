@@ -2,22 +2,27 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
 }
 
 .question-breadcrums {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  justify-content: space-between;
-  gap: 1rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 0.5rem;
   margin-bottom: 1rem;
 }
 
 .question-breadcrum {
-  padding: 1rem 2rem;
+  padding: 5px 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  width: 1rem;
+  height: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .question-breadcrum.pending {
@@ -26,4 +31,12 @@
 
 .question-breadcrum.answered {
   background-color: #5cb85c;
+}
+
+.breadcrums {
+  background-color: transparent;
+  padding: 0;
+  margin-bottom: 0;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
 }

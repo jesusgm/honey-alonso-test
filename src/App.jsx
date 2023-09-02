@@ -1,10 +1,12 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import questionsData from "./questions.json";
-import categories from "./categories.json";
+// import questionsData from "./questions-dev.json";
+import categoriesData from "./categories.json";
 
-import "./App.css";
 import Question from "./components/question";
 import RadarChart from "./components/chart";
+
+import "./App.css";
 
 const PAGES = {
   init: "Inicio",
@@ -15,29 +17,46 @@ const PAGES = {
 function App() {
   const [page, setPage] = useState(PAGES.init);
   const [questions, setQuestions] = useState(
-    questionsData.map((question, index) => {
+    questionsData.map((question) => {
       return {
         ...question,
-        id: index,
         answer: null,
       };
     })
   );
 
-  useEffect(() => {
-    const allAnswered = questions.every((question) => question.answer !== null);
-    if (allAnswered) {
-      setPage(PAGES.results);
-    }
-  }, [questions]);
+  const [categories, setCategories] = useState(
+    categoriesData.map((category) => {
+      return {
+        ...category,
+        value: 0,
+      };
+    })
+  );
+
+  const allAnswered = questions.every((question) => question.answer !== null);
 
   const handleAnswer = (id, newAnswer) => {
+    if (newAnswer === "+") {
+      const currentQuestion = questions.find((question) => question.id === id);
+      setCategories(
+        categories.map((category) => {
+          if (category.id === currentQuestion.categoryId) {
+            return {
+              ...category,
+              value: category.value + 1,
+            };
+          }
+          return category;
+        })
+      );
+    }
     setQuestions(
       questions.map((question) => {
         if (question.id === id) {
           return {
             ...question,
-            answer: newAnswer,
+            answer: question.answer === newAnswer ? null : newAnswer,
           };
         }
         return question;
@@ -48,11 +67,9 @@ function App() {
   return (
     <>
       <h1>Cuestionario HONEY-ALONSO de ESTILOS DE APRENDIZAJE</h1>
-      <div className="breadcrumbs">
-        <span>{PAGES.init}</span>
-        {page === PAGES.questions && (
-          <span onClick={() => setPage(PAGES.init)}>{PAGES.questions}</span>
-        )}
+      <div className="breadcrums">
+        <span onClick={() => setPage(PAGES.init)}>{PAGES.init}</span>
+        {page === PAGES.questions && <span>&gt; {PAGES.questions}</span>}
         {page === PAGES.results && (
           <>
             <span onClick={() => setPage(PAGES.questions)}>
@@ -69,12 +86,12 @@ function App() {
             <li>
               Este cuestionario ha sido diseñado para identificar tu estilo
               preferido de aprender. No es un test de inteligencia, ni de
-              personalidad.{" "}
+              personalidad.
             </li>
             <li>No hay límite de tiempo para contestar el cuestionario.</li>
             <li>
               No hay respuestas correctas o erróneas. Será útil en la medida que
-              seas sincero/a en tus respuestas.{" "}
+              seas sincero/a en tus respuestas.
             </li>
             <li>
               Si estás más de acuerdo que en desacuerdo con la sentencia pon un
@@ -89,7 +106,7 @@ function App() {
       {page === PAGES.questions && (
         <div className="questions-page">
           <div className="question-breadcrums">
-            {questions.map(({ id, title, answer }) => {
+            {questions.map(({ id, answer }) => {
               return (
                 <div
                   key={id}
@@ -113,12 +130,18 @@ function App() {
               />
             );
           })}
+          <button
+            disabled={!allAnswered}
+            onClick={() => setPage(PAGES.results)}
+          >
+            Ver resultados
+          </button>
         </div>
       )}
 
       {page === PAGES.results && (
         <div className="results-page">
-          <RadarChart questions={questions} categories={categories} />
+          <RadarChart categories={categories} />
         </div>
       )}
     </>

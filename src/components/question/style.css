@@ -4,4 +4,39 @@
   border: 1px solid #ccc;
   border-radius: 5px;
   box-shadow: 0 0 5px #ccc;
+  display: flex;
+  gap: 2rem;
+}
+
+.question .question__id {
+  width: 1rem;
+  height: 3rem;
+  border-right: 1px solid #ccc;
+  padding-right: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.question .question__content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.question.answered {
+  background-color: #f5f5f5;
+}
+
+.question button.selected {
+  background-color: #835afd;
+  border-color: #835afd;
+  color: #fff;
+}
+
+.question .question__options {
+  display: flex;
+  gap: 1rem;
 }
